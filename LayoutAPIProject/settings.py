@@ -4,13 +4,9 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-=kyh7a9&pyc72i6ltr7vb+%lhug4ph@o_jdp$d*vv8g8z)k492'
-DEBUG = False
 
-ALLOWED_HOSTS = [
-    'localhost',
-    '127.0.0.1',
-    'deploydjango-j9yq.onrender.com'
-]
+DEBUG = False  # For production, keep False
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'deploydjango-j9yq.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -39,11 +35,13 @@ CKEDITOR_CONFIGS = {
     },
 }
 
+# Static files
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [ BASE_DIR / 'static' ]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+# Media files
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
@@ -95,5 +93,4 @@ LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
 USE_TZ = True
-
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
