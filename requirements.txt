@@ -89,12 +89,14 @@ pyelftools==0.32
 PyJWT==2.10.1
 PyMatting==1.1.14
 pyparsing==3.2.3
+pypiwin32==223
 pyreadline3==3.5.4
 pyserial==3.5
 PySocks==1.7.1
 python-dotenv==1.1.0
 pyttsx3==2.90
 pytz==2025.2
+pywin32==311
 PyYAML==6.0.2
 redis==6.2.0
 referencing==0.36.2
@@ -132,6 +134,7 @@ uvicorn==0.34.3
 virtualenv==20.30.0
 webargs==8.7.0
 Werkzeug==2.0.3
+whitenoise==6.9.0
 wsproto==1.2.0
 zope.event==5.0
 zope.interface==7.2
